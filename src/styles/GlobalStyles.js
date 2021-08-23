@@ -9,7 +9,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 14px;
-    font-family: sans-serif;
+    font-family: 'Roboto Mono', monospace;
   }
 `;
 
