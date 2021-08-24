@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import GlobalStyles from '../styles/GlobalStyles';
 
 import Header from './Header';
+import Content from './Content';
 import Footer from './Footer';
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <>
       <GlobalStyles />
       <Header />
+      <Content mode={currentMode} />
       <Footer mode={currentMode} modeChanger={setCurrentMode} />
     </>
   );
