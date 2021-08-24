@@ -11,6 +11,12 @@ const GlobalStyles = createGlobalStyle`
     font-size: 14px;
     font-family: 'Roboto Mono', monospace;
   }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
 `;
 
 export default GlobalStyles;

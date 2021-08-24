@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import GlobalStyles from '../styles/GlobalStyles';
 
 import Header from './Header';
+import Footer from './Footer';
 
 const App = () => {
   const [currentMode, setCurrentMode] = useState('clock');
@@ -10,9 +11,7 @@ const App = () => {
     <>
       <GlobalStyles />
       <Header />
-      <div>
-        <p>React App</p>
-      </div>
+      <Footer mode={currentMode} modeChanger={setCurrentMode} />
     </>
   );
 };
