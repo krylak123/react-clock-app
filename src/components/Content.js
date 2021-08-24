@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-// import Timer from './Timer';
+import Clock from './Clock';
 
 const Content = ({ mode }) => {
   let currentContent;
 
-  // if (mode === 'clock') {
-  //   currentContent = <Timer />;
-  // }
+  if (mode === 'clock') {
+    currentContent = <Clock />;
+  }
 
   return (
     <ContentWrapper>
@@ -28,8 +28,12 @@ const ContentWrapper = styled.main`
 `;
 
 const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   max-width: 1024px;
+  height: 100%;
 `;
 
 export default Content;
