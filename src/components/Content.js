@@ -3,12 +3,15 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Clock from './Clock';
+import Stopwatch from './Stopwatch';
 
 const Content = ({ mode }) => {
   let currentContent;
 
   if (mode === 'clock') {
     currentContent = <Clock />;
+  } else if (mode === 'stopwatch') {
+    currentContent = <Stopwatch />;
   }
 
   return (
