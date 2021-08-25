@@ -17,9 +17,6 @@ const Footer = ({ mode, modeChanger }) => {
           <Btn type="button" name="stopwatch" onClick={handleOnClick}>
             stopwatch
           </Btn>
-          <Btn type="button" name="timer" onClick={handleOnClick}>
-            timer
-          </Btn>
         </BtnsWrapper>
         <ModeWrapper>
           <CurrentModeTitle>
