@@ -3,10 +3,6 @@
 > A Clock App created in React.
 > Available on [GitHub Pages](https://krylak123.github.io/react-clock-app/)
 
-## General Information
-
-- global store created with useContext and useReducer
-
 ## Technologies Used
 
 - [React](https://pl.reactjs.org/) - JS library
@@ -21,11 +17,11 @@ List the ready features here:
 - clock mode
 - stopwatch mode
 - showing current app mode
+- in clock mode change from digital to analog clock look
 
 List of non-finished features here:
 
 - timer mode
-- in clock mode change from digital to analog clock look
 
 ## Project Status
 
