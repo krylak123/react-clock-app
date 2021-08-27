@@ -136,7 +136,7 @@ const ClockLine = styled.span`
     position: absolute;
     top: 3%;
     left: 50%;
-    transform: translateX(-50%) rotate(${({ deg }) => -deg});
+    transform: translateX(-50%) rotate(-${({ deg }) => deg});
   }
 
   @media screen and (min-width: 1024px) {
