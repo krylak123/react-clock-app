@@ -36,7 +36,7 @@ const HeaderWrapper = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 10px 0;
   background-color: #051545;
 
   @media screen and (min-width: 1024px) {
@@ -49,7 +49,7 @@ const Clock = styled.div`
   margin-right: 10px;
   width: 50px;
   height: 50px;
-  background-color: #eee;
+  background: radial-gradient(#fff, #999);
   border: 5px solid #123;
   border-radius: 50%;
 

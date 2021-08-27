@@ -40,7 +40,8 @@ const Clock = styled.div`
   height: 250px;
   border-radius: 50%;
   border: 10px solid #123;
-  background-color: #fff;
+  background: radial-gradient(#fff, #999);
+  box-shadow: 0 3px 10px 5px #000;
   overflow: hidden;
 
   ::after {
@@ -80,6 +81,7 @@ const Hand = styled.span`
   position: absolute;
   transform-origin: center bottom;
   border-radius: 10px;
+  box-shadow: 2px 3px 5px #123;
 `;
 
 const HandHours = styled(Hand)`
@@ -134,9 +136,10 @@ const ClockLine = styled.span`
   ::before {
     content: '${({ value }) => value}';
     position: absolute;
-    top: 3%;
+    top: 2%;
     left: 50%;
     transform: translateX(-50%) rotate(-${({ deg }) => deg});
+    font-weight: bold;
   }
 
   @media screen and (min-width: 1024px) {
