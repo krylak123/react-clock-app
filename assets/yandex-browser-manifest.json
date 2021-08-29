@@ -5,5 +5,10 @@
     "logo": "yandex-browser-50x50.png",
     "color": "#fff",
     "show_title": true
-  }
+  },
+  "short_name": "Clock App",
+  "name": "Clock Application",
+  "description": "Clock application with clock and stopwatch features.",
+  "display": "standalone",
+  "theme_color": "#051545"
 }

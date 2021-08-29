@@ -1,14 +1,14 @@
 {
-  "name": "react-clock-app",
-  "short_name": "react-clock-app",
-  "description": "",
+  "name": "Clock Application",
+  "short_name": "Clock App",
+  "description": "Clock application with clock and stopwatch features.",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",
   "orientation": "any",
   "start_url": "/?homescreen=1",
   "background_color": "#fff",
-  "theme_color": "#fff",
+  "theme_color": "#051545",
   "icons": [
     {
       "src": "android-chrome-36x36.png",
