@@ -33,6 +33,9 @@ module.exports = {
     }),
     new FaviconsWebpackPlugin({
       logo: './public/favicon.png',
+      favicons: {
+        theme_color: '#051545',
+      },
     }),
   ],
 };
