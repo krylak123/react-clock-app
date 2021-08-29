@@ -1,0 +1,7 @@
+{
+    "short_name": "Clock App",
+    "name": "Clock Application",
+    "description": "Clock application with clock and stopwatch features.",
+    "display": "standalone",
+    "theme_color": "#051545"
+}
