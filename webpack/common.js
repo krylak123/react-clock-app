@@ -22,6 +22,18 @@ module.exports = {
         test: /\.(png|jpg|svg|gif|jpeg)$/,
         type: 'asset',
       },
+      {
+        test: /\.mp4$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'video',
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
