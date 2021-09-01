@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -10,32 +10,22 @@ import videoLarge from '../videos/bg-large.mp4';
 // Video (author: James Cheney) from Pexel
 
 const Content = ({ mode }) => {
-  const [currentVideo, setCurrentVideo] = useState(null);
+  let currentVideo;
   let currentContent;
+
+  if (window.innerWidth >= 1024 && window.innerWidth < 1600) {
+    currentVideo = videoSmall;
+  } else if (window.innerWidth >= 1600) {
+    currentVideo = videoLarge;
+  } else {
+    currentVideo = null;
+  }
 
   if (mode === 'clock') {
     currentContent = <Clock />;
   } else if (mode === 'stopwatch') {
     currentContent = <Stopwatch />;
   }
-
-  const setVideo = () => {
-    if (window.innerWidth >= 1024 && window.innerWidth < 1600) {
-      setCurrentVideo(videoSmall);
-    } else if (window.innerWidth >= 1600) {
-      setCurrentVideo(videoLarge);
-    } else {
-      setCurrentVideo(null);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', setVideo);
-
-    return () => {
-      window.removeEventListener('resize', setVideo);
-    };
-  }, []);
 
   return (
     <ContentWrapper>
