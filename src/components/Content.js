@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 import Clock from './Clock/Clock';
 import Stopwatch from './Stopwatch';
@@ -41,28 +41,6 @@ Content.propTypes = {
   mode: PropTypes.string.isRequired,
 };
 
-const VideoAnimation = keyframes`
-  0% {
-    opacity: 0;
-  }
-
-  2% {
-    opacity: 0;
-  }
-
-  5% {
-    opacity: 1;
-  }
-
-  95% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-`;
-
 const ContentWrapper = styled.main`
   position: relative;
   flex-grow: 1;
@@ -88,7 +66,6 @@ const Video = styled.video`
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
-  animation: ${VideoAnimation} 16s infinite both;
 `;
 
 export default Content;
